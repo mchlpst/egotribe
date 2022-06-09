@@ -1,0 +1,19 @@
+.button {
+	padding: 15px 45px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #263a60;
+	font-weight: bold;
+	border-radius: 20px;
+	cursor: pointer;
+	border: 0;
+}
+
+.button.clean {
+	background: transparent;
+}
+.button.clean:before {
+	content: '<';
+	display: inline-block;
+	margin-right: 6px;
+}

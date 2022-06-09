@@ -1,0 +1,9 @@
+header {
+	text-align: center;
+	padding-top: 20px;
+}
+@media screen and (min-width: 375px) {
+	header {
+		margin-bottom: 55px;
+	}
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto Condensed', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #f2541f;
+	background-image: url('../public/images/BG.png');
+	background-repeat: no-repeat;
+	background-position: center 70%;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.white_bg {
+	background-color: white;
+	color: #263a60;
+	padding: 30px 30px;
+	border-radius: 20px;
+}
+
+main {
+	max-width: 760px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+}
+.col-2 {
+	margin: 15px 30px;
+	width: 100%;
+}
+ol {
+	margin-left: 13px;
+	list-style-type: none;
+	counter-reset: item;
+}
+ol li {
+	counter-increment: item;
+	position: relative;
+}
+ol li:before {
+	content: counter(item);
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -13px;
+}
+
+.selfie-addon {
+	position: relative;
+}
+.selfie-addon::after {
+	background: url('../public/images/hand-selfie.png');
+	content: '';
+	display: block;
+	position: absolute;
+	background-size: cover;
+	width: 285px;
+	height: 349px;
+}
+.mobile__hidden {
+	display: none;
+}
+@media screen and (min-width: 375px) {
+	main {
+		flex-wrap: nowrap;
+	}
+	.col-2 {
+		margin: 0 30px;
+		max-width: 370px;
+	}
+	.selfie-addon::after {
+		width: 285px;
+		height: 349px;
+		transform: rotate(0deg);
+		right: -165px;
+		bottom: -273px;
+	}
+	.mobile__hidden {
+		display: inherit;
+	}
+}

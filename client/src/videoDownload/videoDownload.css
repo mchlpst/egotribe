@@ -1,0 +1,19 @@
+.cropper__wrapper.inverse .image__slider img {
+	width: calc(100% + 76px);
+	height: calc(260px + 76px);
+	position: relative;
+	top: -35px;
+	left: -35px;
+}
+.cropper__wrapper.inverse .image__slider {
+	position: relative;
+}
+@media screen and (min-width: 375px) {
+	.cropper__wrapper.inverse .image__slider img {
+		width: 370px;
+		height: 370px;
+		position: relative;
+		top: -35px;
+		left: -35px;
+	}
+}
